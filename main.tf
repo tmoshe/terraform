@@ -145,8 +145,8 @@ module "elb" {
   #private_subnet_ids   = [module.networking.private_subnet_id1, module.networking.private_subnet_id2]
  # private_subnet_id1 = module.networking.private_subnet_id1
  # private_subnet_id2 = module.networking.private_subnet_id2
-  public_subnet_id1   = module.networking.public_subnet_id1
-  public_subnet_id2   = module.networking.private_subnet_id2
+ public_subnet_id1   = module.networking.public_subnet_id1
+  public_subnet_id2   = module.networking.public_subnet_id2
   
   elb_security_group_id = module.security-group.security_group_elb_id
  
